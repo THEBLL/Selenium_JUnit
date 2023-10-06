@@ -18,7 +18,7 @@ public class C02_TestNotasyonu {
      test methodlari'larini belirli gruplara dahil edip
      toplu olarak da calistirabiliriz
 
-     @Tesr notasyonuna sahip methodlar
+     @Test notasyonuna sahip methodlar
      toplu olarak calistirildiginda
      hangi sira ile calisacagina dair bir kural yoktur
      JUnit bu konuda bir yontem gelistirememistir
@@ -53,16 +53,16 @@ public class C02_TestNotasyonu {
 
     }
     @Test
-    public void test04() throws IllegalAccessException {
-        // verilen iki sayidan sayi1'in daha büyük oldugunu test edin
+    public void test04()  {
+        // verilen iki sayidan, sayi1'in daha buyuk oldugunu test edin
         int sayi1 = 10;
         int sayi2 = 50;
 
         if (sayi1 > sayi2){
-            System.out.println("Karsilastirma Testi PASSED");
+            System.out.println("Karsilastirma testi PASSED");
         }else {
-            System.out.println("Karsilastirma Test FAILED");
-            throw new IllegalAccessException();
+            System.out.println("Karsilastirma testi FAILED");
+            throw new IllegalArgumentException();
         }
     }
 }
